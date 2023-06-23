@@ -1,0 +1,1 @@
+A historiadora Lilia Sarchwz defineo Brasil como o país do não ver, o qual encoberta se

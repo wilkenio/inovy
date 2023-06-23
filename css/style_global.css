@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0 ;
+}
+
+a{
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: OPENBOLD;
+    src: url("fonts/opensans/static/OpenSans_SemiCondensed/OpenSans_SemiCondensed-Bold.ttf");
+}
+
+@font-face {
+    font-family: OP01;
+    src: url("fonts/opensans/static/OpenSans/OpenSans-Light.ttf");
+}
+
+@font-face {
+    font-family: OPENREGULAR;
+    src: url("fonts/opensans/static/OpenSans/OpenSans-Medium.ttf");
+}
+
+@font-face {
+    font-family: RL01;
+    src: url("fonts/roboto/Roboto-05.ttf");
+}
+
+@font-face {
+    font-family: MONT;
+    src: url("fonts/Montserrat/static/Montserrat-ExtraBold.ttf");
+}

@@ -1,0 +1,103 @@
+
+nav ul {
+    background-color: aliceblue;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 25% auto auto auto auto auto 25% 16% ;
+    grid-template-rows: auto ;
+    align-items: center;
+}
+
+
+.itens-menu{
+    padding: 7%;
+}
+
+.itens-menu a{
+    color: #0b2244d7;
+    font-family: RL01;
+    font-size: 1.2vw;
+    transition: 0.3s;
+}
+
+.itens-menu a:hover{
+    color: #E1A72C;
+}
+
+#orçamento{
+    padding: 18%;
+    background-color: #0B2244;
+    text-align: center;
+}
+#orçamento a{
+    color: white;
+    font-size: 1.2vw;
+    font-family: RL01;
+}
+
+#logo a img{
+    margin-left: 15%;
+    width: 23%;
+}
+
+#hambur{
+    display: none;
+    color: #0B2244;
+}
+#close-menu{
+    display: none;
+    color: #0B2244;
+}
+#seta-orçamento{
+    position: absolute;
+    margin-top: -0.2%;
+    margin-left: 0.3%;
+}
+.text-menu-mobile{
+    font-family: OPENREGULAR;
+    font-size: 15px;
+    position: absolute;
+    margin-top: 1.6%;
+    margin-left: 2%;
+}
+@media (max-width: 1050px){
+    nav{
+        padding: 5%;
+        background-color: aliceblue;
+    }
+    nav ul{
+        position: absolute;
+        left: -2000%;
+        grid-template-rows: auto auto auto auto auto auto auto auto ;
+        grid-template-columns: auto;
+        justify-content: center;
+        height: 110vh;
+        width: 100%;
+        transition: 0.5s ease-in-out;
+        z-index: 9;
+    }
+    #orçamento{
+        padding: 5%;
+        font-size: 4vw;
+    }
+    #orçamento a{
+        font-size: 4vw;
+    }
+    .itens-menu a{
+        font-size: 5vw;
+    }
+    #logo a img{
+        margin-left: 38%;
+        width: 25%;
+        padding-top: 5%;
+    }
+    #hambur{
+        display: block;
+        color: #0B2244;
+    }
+    .itens-menu{
+        text-align: center;
+        padding: 1%;
+    }
+}
+
