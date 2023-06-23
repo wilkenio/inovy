@@ -56,14 +56,14 @@
 @media (max-width: 1050px){
     #capa{
         flex-wrap: wrap;
-        height: 110vw;
+        height: 140vw;
         background-position-x: 80%;
     }
     #capa-1{
         width: 100%;
         margin: 0;
         padding: 5%;
-        margin-top: 10%;
+        margin-top: 28%;
     }
     #capa-1 h1{
         font-size: 15vw;
@@ -124,7 +124,7 @@
 #sobre-1 h1 span{
     color: #133E7D;
 }
-#listra{
+#listra-1{
     position: absolute;
     padding: 0.08%;
     margin-top: -1%;
@@ -132,6 +132,17 @@
     width: 3%;
     border-radius: 500px;
     background-color:#133E7D;
+}
+
+#listra-2{
+    position: absolute;
+    padding: 0.08%;
+    margin-top: -1%;
+    margin-left: 11%;
+    width: 3%;
+    border-radius: 500px;
+    background-color:#133E7D;
+    display: none;
 }
 
 #sobre-1 h6{
@@ -162,9 +173,46 @@
     
     #sobre-1{
         width: 100%;
-        
+        order: 1;
+        margin-top: 35%;
     }
+    #sobre-1 h4{
+        font-size: 4vw;
+        text-align: center;
+    }
+    #listra-1{
+        position: absolute;
+        padding: 0.2%;
+        margin-top: -2.2%;
+        margin-left: 18%;
+        width: 8%;
+        border-radius: 500px;
+        background-color:#133E7D;
+    }
+    #listra-2{
+        display: block;
+        margin-left: 53.5%;
+        margin-top: -2.2%;
+        padding: 0.2%;
+        width: 8%;
+    }
+    #sobre-1 h1 br{
+        display: none;
+    }
+    #sobre-1 h1{
+        font-size: 6vw;
+        text-align: center;
+    }
+
     #sobre-2{
         width: 100%;
+    }
+    #sobre-1 h6{
+        font-size: 4.4vw;
+        font-family: OP01;
+        color: #22201e;
+    }
+    #sobre-1 a{
+        font-size: 4vw;
     }
 }
