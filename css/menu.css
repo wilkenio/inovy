@@ -1,6 +1,10 @@
-
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 8;
+}
 nav ul {
-    background-color: aliceblue;
+    background-color: #fff;
     list-style: none;
     display: grid;
     grid-template-columns: 25% auto auto auto auto auto 25% 16% ;
@@ -42,31 +46,34 @@ nav ul {
 
 #hambur{
     display: none;
-    color: #0B2244;
+    color: #fff;
 }
 #close-menu{
     display: none;
-    color: #0B2244;
+    color: #133E7D;
 }
 #seta-orçamento{
     position: absolute;
     margin-top: -0.2%;
     margin-left: 0.3%;
 }
-.text-menu-mobile{
+#text-menu-mobile-1,#text-menu-mobile-2{
     font-family: OPENREGULAR;
-    font-size: 15px;
-    position: absolute;
+    font-size: 3.5vw;
     margin-top: 1.6%;
     margin-left: 2%;
+    display: none;
 }
+
+
 @media (max-width: 1050px){
     nav{
         position: fixed;
         width: 90%;
         padding: 5%;
-        background-color: aliceblue;
+        background-color: rgba(240, 248, 255, 0);
         z-index: 9;
+        display: flex;
     }
     nav ul{
         position: fixed;
@@ -77,8 +84,9 @@ nav ul {
         grid-template-rows: auto auto auto auto auto auto auto auto ;
         grid-template-columns: auto;
         justify-content: center;
-        transition: 0.5s ease-in-out;
+        transition: 0.2s ease-in-out;
         z-index: 9;
+        margin-top: 9.5%;
     }
     #orçamento{
         padding: 5%;
@@ -98,11 +106,30 @@ nav ul {
     }
     #hambur{
         display: block;
-        color: #0B2244;
+        color: #fff;
     }
     .itens-menu{
         text-align: center;
         padding: 1%;
     }
+    #text-menu-mobile-1{
+        display: block;
+        color: #fff;
+        margin-top: 0;
+        position: static;
+       }
+    #text-menu-mobile-2{
+        color: #133E7D;
+        margin-top: 0;
+        position: static; 
+    }
+    #menu-mobile{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+    }
+
 }
 
