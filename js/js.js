@@ -1,7 +1,7 @@
 /* MENU */
 var cont = 0
 var meuUl = document.getElementById('menu-ul')
-
+var screenWidth = window.innerWidth;
 if (window.screen.availWidth < 1050) {
     //var meuUl = document.getElementById('menu-ul')
     var menuAbrir = document.getElementById('hambur')
@@ -52,18 +52,20 @@ if (window.screen.availWidth < 1050) {
 }
 
 //BORDA ESCURA NO MENU PC
-window.addEventListener('scroll', function () {
-    // Obtenha o valor do scroll
-    var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+if (screenWidth > 1050) {
+    window.addEventListener('scroll', function () {
+        // Obtenha o valor do scroll
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
 
-    var screenWidth = window.innerWidth;
-    if(scrollTop > 50){
-        meuUl.style.boxShadow='2px 2px 20px #00000027'
-    }else{
-        meuUl.style.boxShadow='2px 2px 20px transparent'
-    }
-   
-});
+        var screenWidth = window.innerWidth;
+        if (scrollTop > 50) {
+            meuUl.style.boxShadow = '2px 2px 20px #00000027'
+        } else {
+            meuUl.style.boxShadow = '2px 2px 20px transparent'
+        }
+
+    });
+}
 
 //MENU NO MOBILE | TRANSPARENTE OU NÃO
 window.addEventListener('scroll', function () {
@@ -72,7 +74,7 @@ window.addEventListener('scroll', function () {
 
 
     var nav = document.getElementById('nav')
-    var screenWidth = window.innerWidth;
+
 
     if (cont == 0) {
         if (screenWidth < 1050) {
