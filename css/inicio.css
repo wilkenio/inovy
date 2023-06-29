@@ -1,16 +1,22 @@
+#diagonal{
+
+    width: 100%;
+   margin-top: -12%;
+}
 #capa{
     background-image: url('../img/capa.png');
     background-size: cover;
     display: flex;
     flex-direction: row;
-    height: 85vh;
+    height: 95vh;
     background-position-y:bottom;
+    background-attachment: fixed; 
 }
 
 #capa-1{
     width: 50%;
     padding-left: 7%;
-    margin-top: 23vh;
+    margin-top: 30vh;
 }
 #capa-1 h1{
     color: white;
@@ -51,6 +57,13 @@
     color: #0B2244;
     font-size: 1.4vw;
     font-family: OPENREGULAR;
+    border: 2px solid #fff;
+    transition: 1s;
+}
+#capa-2  span:hover{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: white;
 }
 
 @media (max-width: 1050px){

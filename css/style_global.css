@@ -7,6 +7,18 @@ a{
     text-decoration: none;
 }
 
+body::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #a5a5a5;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+  }
 @font-face {
     font-family: OPENBOLD;
     src: url("fonts/opensans/static/OpenSans_SemiCondensed/OpenSans_SemiCondensed-Bold.ttf");
