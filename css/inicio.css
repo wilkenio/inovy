@@ -161,7 +161,7 @@
 #sobre-1 h6{
     font-size: 1.4vw;
     font-family: OP01;
-    color: #22201e;
+    color: #424242;
 }
 #sobre-1 a{
     color: #133E7D;
@@ -223,9 +223,72 @@
     #sobre-1 h6{
         font-size: 4.4vw;
         font-family: OP01;
-        color: #22201e;
     }
     #sobre-1 a{
         font-size: 4vw;
+    }
+}
+
+#dados{
+    display: flex;
+    flex-direction: row;
+}
+.dados-items{
+    box-shadow: 10px 10px 25px 1px #C0C5CE;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 3%;
+    margin: 8%;
+    margin-top: 0;
+    transition: 1s;
+    border-radius: 8px;
+    display: grid;
+    grid-template-areas: "dados1 dados2 dados2"
+                         "dados1 dados2 dados2"
+                         "dados1 dados3 dados3";
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dados-items span{
+    color: #133E7D;
+    font-size: 6vw;
+    font-family:RL01 ;
+    grid-area: dados1;
+    margin: -60%;
+}
+
+.dados-items h1{
+    grid-area: dados2;
+    font-size: 5vw;
+    font-family: OPENREGULAR;
+}
+
+.dados-items h3{
+    grid-area: dados3;
+    font-family: OPENREGULAR;
+    font-size: 2vw;
+    color: #6D7278;
+}
+
+@media (max-width: 1050px){
+    #dados{
+        flex-direction: column;
+        align-items: center;
+    }
+    .dados-items{
+        width: 60%;
+    }
+    .dados-items span{
+        font-size: 15vw;
+    }
+    
+    .dados-items h1{
+        font-size: 13vw;
+    }
+    
+    .dados-items h3{
+        font-size: 5vw;
     }
 }
