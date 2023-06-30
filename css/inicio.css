@@ -257,6 +257,7 @@
     font-family:RL01 ;
     grid-area: dados1;
     margin: -60%;
+    font-weight: bold;
 }
 
 .dados-items h1{
@@ -268,17 +269,20 @@
 .dados-items h3{
     grid-area: dados3;
     font-family: OPENREGULAR;
-    font-size: 2vw;
+    font-size: 1.8vw;
     color: #6D7278;
+    margin-top: -8%;
 }
 
 @media (max-width: 1050px){
     #dados{
         flex-direction: column;
         align-items: center;
+        margin-top: 10%;
     }
     .dados-items{
         width: 60%;
+        padding: 9%;
     }
     .dados-items span{
         font-size: 15vw;
@@ -292,3 +296,10 @@
         font-size: 5vw;
     }
 }
+
+
+
+
+
+
+
